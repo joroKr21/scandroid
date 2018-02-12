@@ -10,7 +10,13 @@ scalacOptions ++= Seq(
   "-unchecked",
   "-language:higherKinds",
   "-Ypartial-unification",
+  "-Xfatal-warnings",
   "-Xfuture",
+  "-Xlint",
+)
+
+scalacOptions in (Compile, console) --= Seq(
+  "-Xfatal-warnings",
   "-Xlint",
 )
 
@@ -39,8 +45,8 @@ libraryDependencies ++= Seq(
   "org.apache.lucene" % "lucene-highlighter" % versions.lucene,
   "org.apache.lucene" % "lucene-queryparser" % versions.lucene,
 
-  "io.circe" %% "circe-generic" % versions.circe,
-  "org.jsoup" % "jsoup" % versions.jsoup,
   "com.softwaremill.quicklens" %% "quicklens" % versions.quickLens,
   "de.heikoseeberger" %% "akka-http-circe" % versions.akkaHttpCirce,
+  "io.circe" %% "circe-generic" % versions.circe,
+  "org.jsoup" % "jsoup" % versions.jsoup,
 )
