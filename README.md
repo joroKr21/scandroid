@@ -3,7 +3,7 @@
 A web crawler, scraper, parser, searcher and in-memory index based on
 Akka, Akka-Http and Akka-Streams with Lucene.
 
-I'm done now ;)
+I'm done now :wink:
 
 ### Usage
 
@@ -65,5 +65,5 @@ Start `Server.scala` and send HTTP requests. E.g:
 
 ### Todos:
 - [ ] A web page user interface
-- [ ] Testing (still learning the Akka test kit)
+- [ ] Testing (still learning the Akka test kit) :sweat_smile:
 - [ ] Split scrape queue per host (to be fair)
